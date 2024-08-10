@@ -1,5 +1,7 @@
 package unidade1.gabarito_aula4;
 
+import java.time.LocalDate;
+
 public class Aluno {
 
     String nomeDoAluno = "Gabriel";
@@ -7,6 +9,8 @@ public class Aluno {
     double nota1 = 5.0;
     double nota2;
     double nota3;
+    LocalDate dataNascimento = null;
+    LocalDate dataCadastro = LocalDate.now();
 
     public String getNomeDoAluno() {
         return nomeDoAluno;
@@ -15,7 +19,7 @@ public class Aluno {
     public String getNomeDaMae(){
         return nomeDaMae;
     }
-    
+
 
     public String getNomeDoAlunoEmMaiusculo() {
         return nomeDoAluno.toUpperCase();
@@ -57,11 +61,16 @@ public class Aluno {
             return true;
         return false;
     }
+
     @Override
     public String toString() {
         return "Aluno [nomeDoAluno=" + nomeDoAluno + ", nomeDaMae=" + nomeDaMae + ", nota1=" + nota1 + ", nota2="
-                + nota2 + ", nota3=" + nota3 + "]";
+                + nota2 + ", nota3=" + nota3 + ", dataNascimento=" + dataNascimento + ", dataCadastro=" + dataCadastro
+                + "]";
     }
+
+    
+    
     
     }
 

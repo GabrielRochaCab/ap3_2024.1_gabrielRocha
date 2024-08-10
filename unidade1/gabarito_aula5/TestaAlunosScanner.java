@@ -1,6 +1,9 @@
 package unidade1.gabarito_aula5;
 
 import unidade1.gabarito_aula4.Aluno;
+
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.Scanner;
 
 public class TestaAlunosScanner {
@@ -24,6 +27,11 @@ public class TestaAlunosScanner {
 
         System.out.println("Digite o nome da mae");
         String nomeDaMae = teclado.next();
+
+        DateTimeFormatter padrao = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+        System.out.print("Digite a data de nascimento (formato dd/MM/yyyy)");
+        String dataNascimentoString = teclado.next();
+        LocalDate dataNascimento = LocalDate.parse(dataNascimentoString, padrao);
 
         umAluno.setNomeDoAluno(nomeDoAluno);
         umAluno.setNota1(nota1);
