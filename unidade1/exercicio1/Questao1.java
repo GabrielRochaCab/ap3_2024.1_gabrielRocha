@@ -1,5 +1,6 @@
 package unidade1.exercicio1;
-
+//Xico - Corrigindo: Falta codigo secreto
+//Xico - Corrigindo: Falta javadoc
 import java.util.Scanner;
 
 public class Questao1 {
